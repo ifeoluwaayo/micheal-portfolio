@@ -114,7 +114,7 @@ export default function Home() {
                   {skills.map((skill, i) => (
                     <div
                       key={i}
-                      className="px-3 py-1 rounded-md shadow-md text-slate-50 text-xs md:text-sm font-medium hover:scale-95 duration-200 ease-in-out"
+                      className="px-3 py-1 rounded-md shadow-md text-slate-50 md:text-sm font-medium hover:scale-95 duration-200 ease-in-out"
                     >
                       {skill}
                     </div>
