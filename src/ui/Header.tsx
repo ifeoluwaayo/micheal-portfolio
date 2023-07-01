@@ -44,7 +44,7 @@ export const Header = () => {
         </div>
       </div>
 
-      <div className="flex items-center gap-4 md:gap-6">
+      <div className="flex items-center gap-5 md:gap-8">
         <BsGithub
           className="text-2xl cursor-pointer hover:scale-95"
           onClick={() => router.push("https://github.com/micheal081")}
