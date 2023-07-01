@@ -23,7 +23,7 @@ export const Header = () => {
 
   return (
     <div
-      className={`flex justify-between md:px-10 z-[100] px-3 h-[70px] md:h-[80px] backdrop-blur-md items-center w-full bg-transparent fixed ${
+      className={`flex justify-between md:px-10 z-[100] px-5 h-[70px] md:h-[80px] backdrop-blur-md items-center w-full bg-transparent fixed ${
         scroll && "shadow-sm"
       }`}
     >
@@ -40,7 +40,7 @@ export const Header = () => {
           {!scroll && <AnimatedTitle title="Micheal Ighietsemhe." />}
         </div>
         <div className="md:hidden flex">
-          {!scroll && <AnimatedTitle title="Micheal Ighietsemhe." />}
+          {!scroll && <AnimatedTitle title="Micheal." />}
         </div>
       </div>
 
