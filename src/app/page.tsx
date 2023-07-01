@@ -44,7 +44,7 @@ export default function Home() {
           <div className="flex flex-col min-h-screen">
             <Header />
             <div className="flex flex-col flex-1 md:px-[10vh] px-10 mt-[70px] md:mt-[80px] min-h-[200vh]">
-              <div className="flex flex-col mt-10">
+              <div className="flex flex-col md:mt-10 mt-5">
                 <h1 className="text-5xl font-medium text-slate-50 font-header">
                   Hi, I&apos;m{" "}
                   <span className="animate-text bg-gradient-to-r from-blue-500 via-slate-500 to-green-500 bg-clip-text text-transparent">
