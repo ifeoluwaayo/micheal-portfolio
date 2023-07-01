@@ -46,7 +46,7 @@ export default function Home() {
             <div className="flex flex-col flex-1 md:px-[10vh] px-10 mt-[70px] md:mt-[80px] min-h-[200vh]">
               <div className="flex flex-col mt-10">
                 <h1 className="text-5xl font-medium text-slate-50 font-header">
-                  Hi, I'm{" "}
+                  Hi, I&apos;m{" "}
                   <span className="animate-text bg-gradient-to-r from-blue-500 via-slate-500 to-green-500 bg-clip-text text-transparent">
                     Micheal.
                   </span>{" "}
@@ -56,7 +56,7 @@ export default function Home() {
                   Software Engineer
                 </p>
                 <p className="text-base text-slate-300 font-light mt-3">
-                  I'm a Software Engineer specialized in NODE.JS using
+                  I&apos;m a Software Engineer specialized in NODE.JS using
                   TypeScript.
                 </p>
               </div>
@@ -128,8 +128,8 @@ export default function Home() {
                 </h1>
                 <div className="flex flex-col gap-3 mt-3">
                   <p className="text-base text-slate-300 font-light">
-                    Here's a list of some of my projects. You can find more on
-                    my{" "}
+                    Here&apos;s a list of some of my projects. You can find more
+                    on my{" "}
                     <a
                       href="https://github.com/micheal081"
                       target="_blank"
@@ -142,13 +142,13 @@ export default function Home() {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-3">
                     <div className="flex flex-col mt-3">
                       <p className="text-base text-slate-300 font-light">
-                        I'm a Software Engineer specialized in NODE.JS using
-                        TypeScript.
+                        I&apos;m a Software Engineer specialized in NODE.JS
+                        using TypeScript.
                       </p>
                       <div className="flex flex-col mt-3">
                         <p className="text-base text-slate-300 font-light">
-                          I'm a Software Engineer specialized in NODE.JS using
-                          TypeScript.
+                          I&apos;m a Software Engineer specialized in NODE.JS
+                          using TypeScript.
                         </p>
                       </div>
                     </div>
