@@ -37,7 +37,7 @@ export const projects = [
     ],
     useage:
       "To use these routes, send HTTP requests to the appropriate endpoint using a client such as Postman or using an HTTP library in your programming language of choice.",
-    github: "https://github.com",
+    github: "https://github.com/micheal081/Loan-System",
     link: "",
     type: "done",
   },
@@ -53,7 +53,7 @@ export const projects = [
     ],
     useage:
       "To utilize the E-learning System API, you can send HTTP requests to the respective API endpoints using a client such as Postman or by using an HTTP library in your preferred programming language.",
-    github: "https://github.com",
+    github: "https://github.com/micheal081/School-system",
     link: "",
     type: "done",
   },
@@ -76,7 +76,6 @@ export const projects = [
     ],
     useage:
       "We are proud to announce that we have successfully secured funding from two investors who believe in our vision and recognize the potential of Payflex Inc. This financial support enables us to accelerate development and bring our services to market more efficiently. Furthermore, Payflex Inc. is registered under the reputable association of Nigeria, ensuring compliance with local regulations and industry standards. Our company is valued at an impressive 2.5 million naira, a testament to the viability and growth potential of our venture. We are excited about the future and look forward to sharing more updates with you soon!",
-    github: "https://github.com",
     link: "https://payflex.vercel.app",
     type: "production",
   },
