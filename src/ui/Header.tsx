@@ -4,6 +4,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import AnimatedTitle from "./bits/AnimatedTitle";
+import Link from "next/link";
 
 export const Header = () => {
   const [scroll, setScroll] = useState(false);
@@ -27,7 +28,7 @@ export const Header = () => {
         scroll && "shadow-sm"
       }`}
     >
-      <div>
+      <Link href="/">
         <Image
           src="/logo.png"
           width={40}
@@ -42,7 +43,7 @@ export const Header = () => {
         <div className="md:hidden flex">
           {!scroll && <AnimatedTitle title="Micheal." />}
         </div>
-      </div>
+      </Link>
 
       <div className="flex items-center gap-5 md:gap-8">
         <BsGithub

@@ -4,7 +4,7 @@ import { Header } from "@/ui";
 import { PageWrapper } from "@/wrappers";
 import AnimatedTitle from "@/ui/bits/AnimatedTitle";
 import { AiOutlineCloudDownload, AiOutlineFolderView } from "react-icons/ai";
-import { ViewResume } from "@/ui";
+import { ViewResume, Project } from "@/ui";
 import { skills, projects } from "../../data";
 
 export default function Home() {
@@ -43,7 +43,7 @@ export default function Home() {
         <PageWrapper>
           <div className="flex flex-col min-h-screen">
             <Header />
-            <div className="flex flex-col flex-1 md:px-[10vh] px-10 mt-[70px] md:mt-[80px] min-h-[200vh]">
+            <div className="flex flex-col flex-1 md:px-[10vh] px-10 mt-[70px] md:mt-[80px] min-h-fit pb-10">
               <div className="flex flex-col md:mt-10 mt-5">
                 <h1 className="text-5xl font-medium text-slate-50 font-header">
                   Hi, I&apos;m{" "}
@@ -90,14 +90,14 @@ export default function Home() {
                 </p>
                 <div className="mt-5 flex gap-3">
                   <button
-                    className="text-xs md:text-sm px-2 py-1 rounded-md bg-slate-300 shadow-md font-medium cursor-pointer hover:scale-95 duration-200 ease-in-out flex items-center"
+                    className="text-sm px-3 py-2 rounded-md bg-blue-500 shadow-md font-medium cursor-pointer hover:scale-95 duration-200 ease-in-out flex items-center"
                     onClick={handleDownload}
                   >
                     <AiOutlineCloudDownload className="inline-block mr-1" />{" "}
                     <p className="whitespace-nowrap">Download Resume</p>
                   </button>
                   <button
-                    className="text-xs md:text-sm px-2 py-1 rounded-md bg-orange-300 shadow-md font-medium cursor-pointer hover:scale-95 duration-200 ease-in-out flex items-center"
+                    className="text-sm px-3 py-2 rounded-md bg-orange-500 shadow-md font-medium cursor-pointer hover:scale-95 duration-200 ease-in-out flex items-center"
                     onClick={() => setOpen(true)}
                   >
                     <AiOutlineFolderView className="inline-block mr-1" />{" "}
@@ -110,11 +110,11 @@ export default function Home() {
                 <h1 className="text-3xl font-medium text-slate-50 font-header">
                   Skills
                 </h1>
-                <div className="flex flex-wrap gap-4 mt-3">
+                <div className="flex flex-wrap gap-3 md:gap-4 mt-3">
                   {skills.map((skill, i) => (
                     <div
                       key={i}
-                      className="px-3 py-1 rounded-md shadow-md text-slate-50 md:text-sm font-medium hover:scale-95 duration-200 ease-in-out"
+                      className=" px-2 md:px-3 py-1 rounded-md shadow-md text-slate-50 text-xs md:text-sm font-medium hover:scale-95 duration-200 ease-in-out"
                     >
                       {skill}
                     </div>
@@ -139,19 +139,10 @@ export default function Home() {
                     </a>
                     .
                   </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-3">
-                    <div className="flex flex-col mt-3">
-                      <p className="text-base text-slate-300 font-light">
-                        I&apos;m a Software Engineer specialized in NODE.JS
-                        using TypeScript.
-                      </p>
-                      <div className="flex flex-col mt-3">
-                        <p className="text-base text-slate-300 font-light">
-                          I&apos;m a Software Engineer specialized in NODE.JS
-                          using TypeScript.
-                        </p>
-                      </div>
-                    </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-3 gap-5">
+                    {projects.map((project, i) => (
+                      <Project key={i} project={project} />
+                    ))}
                   </div>
                 </div>
               </div>

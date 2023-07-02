@@ -7,17 +7,25 @@ export async function generateMetadata({
   params,
 }: any): Promise<Metadata | ResolvingMetadata> {
   const { slug } = params;
+  const id = slug[0];
+
+  const project: any = projects.find(
+    (project: any) => project.name.toLowerCase().replaceAll(" ", "-") === id
+  );
 
   return {
-    title: `${slug[0]} | Micheal Ighietsemhe`,
-    description: `Project ${slug[0]} by Micheal Ighietsemhe`,
+    title: `${project.name} | Micheal Ighietsemhe`,
+    description: `${project.description} By Micheal Ighietsemhe`,
   };
 }
 
 const page = ({ params }: any) => {
   const { slug } = params;
+  const id = slug[0];
 
-  const project = projects.find((project: any) => project.id === slug[0]);
+  const project: any = projects.find(
+    (project: any) => project.name.toLowerCase().replaceAll(" ", "-") === id
+  );
 
   return <ProjectPage project={project} />;
 };
